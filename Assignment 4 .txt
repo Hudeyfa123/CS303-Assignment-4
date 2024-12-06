@@ -1,0 +1,63 @@
+CS303 Assignment # 4
+Hudeyfa Sheikhnoor
+
+Question 1: Expression Trees and Binary Search Tree
+
+a) Expression Tree for Inorder Traversal `x / y + 3 * b / c`:
+Structure:
+         +
+       /   \\
+     /       \\
+   /           \\
+  /             \\
+ /               \\
+/                 \\
+  /                 *
+ / \\               / \\
+/   \\             /   \\
+x   y            3     /
+                   /   \\
+                  b     c
+
+b) Expression Tree for Postorder Traversal `x y z + a b – c * / –`:
+Structure:
+         -
+       /   \\
+      x     /
+           / \\
+         +     *
+        / \\   / \\
+       y   z a   -
+                 / \\
+                b   c
+
+c) Expression Tree for Preorder Traversal `* + a – x y / c d`:
+Structure:
+         *
+       /   \\
+      +     /
+     / \\   / \\
+    a   - c   d
+       / \\
+      x   y
+
+d) Binary Search Tree from `to_string` Output:
+Structure:
+           30
+         /    \\
+       15      35
+      /  \\    /  \\
+     4   20  32   38
+         / \\
+        18  NULL
+       / \\
+    NULL  19
+
+Question 2: Graph Traversals
+
+a) Finish Order of Depth-First Search (DFS):
+**Finish order**: E → C → D → B → A
+
+b) Visit Sequence of Breadth-First Search (BFS):
+**Visit sequence**: A → B → C → D → E
+
